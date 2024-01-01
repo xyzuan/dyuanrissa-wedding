@@ -1,14 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Habibi&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   background: #23261e;
-}
-
-html {
   font-family: "Montserrat", sans-serif;
 }
+
 .font-habibi {
   font-family: "Habibi", serif;
 }
@@ -17,7 +17,4 @@ html {
 }
 .bg-blur-2px {
   filter: blur(2px);
-}
-p {
-  @apply tracking-wide;
 }

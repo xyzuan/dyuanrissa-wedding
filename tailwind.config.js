@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     boxShadow: {
-      DEFAULT: "#11130f 0px 14px 20px;",
+      default: "#11130f 0px 14px 20px;",
     },
     maxWidth: {
       "screen-2xl": "1440px",
