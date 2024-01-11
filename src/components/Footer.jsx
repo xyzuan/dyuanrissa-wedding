@@ -7,9 +7,9 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <div className=" fixed lg:hidden bottom-0 mb-1 mx-1 right-0 left-0 z-20">
-      <div className="bg-dark-500 w-full px-6 rounded-full shadow border-opacity-20 border border-white">
-        <ul className=" flex items-center justify-evenly text-white text-xs font-light py-2 md:py-3">
+    <div className="max-w-screen-sm w-fit fixed bottom-0 mb-6 mx-auto right-0 left-0 z-20">
+      <div className="bg-[#9a6953] backdrop-blur-xl bg-opacity-80 w-full px-6 rounded-full shadow">
+        <ul className=" flex items-center gap-6 justify-evenly text-white text-xs font-light py-2 md:py-3">
           <li className="flex items-center font-medium  flex-col px-2 py-1">
             <Image className="h-6 w-6 mb-1" src={Home} />
             <p>Beranda</p>
