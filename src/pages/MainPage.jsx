@@ -23,7 +23,7 @@ function MainPage() {
       </section>
 
       <section
-        id="beranda-dekstop"
+        id="beranda"
         className="hidden h-screen lg:grid bg-dark-500 py-14 lg:py-0 mb:pb-6 grid-flow-col grid-cols-2 gap-4 row-span-4"
       >
         <div className="flex flex-col text-white px-8 pb-20 pt-28 justify-end">
@@ -58,7 +58,7 @@ function MainPage() {
       </section>
       <section
         id="resepsi"
-        className="relative bg-[#472c1a] py-14  mb:pb-6 grid grid-flow-row gap-4 row-span-4 h-screen"
+        className="relative bg-[#472c1a] py-14  mb:pb-6 grid grid-flow-row gap-4 row-span-4 min-h-screen"
       >
         <div className="absolute h-full w-full overflow-hidden">
           <Image
@@ -86,7 +86,7 @@ function MainPage() {
             <p className="lg:hidden font-habibi ">Senin, 12 Februari 2024</p>
           </div>
         </div>
-        <div className="flex w-full px-8 text-white font-habibi text-sm md:text-base lg:text-xl">
+        <div className="flex w-full px-8 text-white font-habibi text-sm md:text-base lg:text-xl mb-6">
           <div className="flex flex-col w-1/2 text-center px-[1px] break-words">
             <p className="mb-3">Putra dari</p>
             <p className="text-lg md:text-2xl font-bold">Bapak Andri Wahyudi</p>
@@ -95,13 +95,13 @@ function MainPage() {
             </p>
           </div>
           <div className="flex flex-col w-1/2 text-center px-2 break-words ">
-            <p className="mb-3">Putra dari</p>
+            <p className="mb-3">Putri dari</p>
             <p className="text-lg md:text-2xl font-bold">Bapak Suwarno</p>
             <p className="text-lg md:text-2xl mt-3 font-bold">Ibu Muntamah</p>
           </div>
         </div>
         <div className="flex flex-col mx-auto h-40 lg:h-full items-center justify-center w-full px-8">
-          <div className="flex flex-row w-full ">
+          <div className="flex flex-row w-full">
             <div className="my-[18px] flex w-full items-center justify-center lg:h-20 md:justify-center">
               <img
                 src="/assets/icons/resepsi.svg"
@@ -121,7 +121,7 @@ function MainPage() {
             Jawa Timur
           </p>
         </div>
-        <div className="flex flex-col mx-auto lg:h-full items-center justify-start w-full px-8">
+        <div className="flex flex-col mx-auto lg:h-full items-center justify-start w-full px-8 mt-6">
           <iframe
             className="w-full h-[320px] max-w-[610px] rounded-xl mt-3"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d398.2485603069215!2d112.01908849221192!3d-8.132522757689141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e66c3f660fd1%3A0x5d9f15cf97404673!2sV289%2BXP2%2C%20Baran%20II%2C%20Panjerejo%2C%20Rejotangan%2C%20Tulungagung%20Regency%2C%20East%20Java%2066293!5e0!3m2!1sen!2sid!4v1704105841270!5m2!1sen!2sid"
