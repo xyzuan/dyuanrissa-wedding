@@ -13,11 +13,11 @@ function MainPage() {
       >
         <div className="flex flex-col w-full relative">
           <div className="flex flex-col w-full text-white text-center h-auto px-8 py-3.5 z-10">
-            <p className="font-habibi">Pernikahan dari</p>
+            <p className="">Pernikahan dari</p>
             <h4 className="font-great-vibes text-6xl font-bold mb-1 mt-3">
               Dhody & Arisa
             </h4>
-            <p className="font-habibi ">Senin, 12 Februari 2024</p>
+            <p className=" ">Senin, 12 Februari 2024</p>
           </div>
         </div>
       </section>
@@ -38,11 +38,11 @@ function MainPage() {
             <p>( QS. Ar- Rum 21 )</p>
           </div>
           <div className="flex flex-col ">
-            <p className="font-habibi">Pernikahan dari</p>
+            <p className="">Pernikahan dari</p>
             <h4 className="font-great-vibes text-6xl font-bold mb-4 mt-6">
               Dhody & Arisa
             </h4>
-            <p className="font-habibi ml-auto">Senin, 12 Februari 2024</p>
+            <p className=" ml-auto">Senin, 12 Februari 2024</p>
           </div>
         </div>
         <div className="flex w-full relative">
@@ -62,13 +62,6 @@ function MainPage() {
       >
         <div className="absolute h-full w-full overflow-hidden">
           <Image
-            className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute bottom-0 left-0 opacity-15 rotate-180 pointer-events-none"
-            width={620}
-            height={620}
-            src="/assets/icons/flower.svg"
-          />
-
-          <Image
             className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute top-0 right-0 opacity-15 pointer-events-none"
             width={620}
             height={620}
@@ -79,48 +72,61 @@ function MainPage() {
         <div className="flex flex-col  w-full relative lg:h-full">
           <div className="absolute h-full w-full lg:hidden"></div>
           <div className="flex flex-col w-full text-white text-center h-auto  px-8 py-3.5 z-10 lg:my-auto">
-            <p className="font-habibi lg:hidden">Pernikahan dari</p>
+            <p className=" lg:hidden">Pernikahan dari</p>
             <h4 className="font-great-vibes text-6xl font-bold lg:text-7xl mb-4 mt-6 ">
               Dhody & Arisa
             </h4>
-            <p className="lg:hidden font-habibi ">Senin, 12 Februari 2024</p>
+
+            <div className="flex flex-col items-center gap-6 w-full text-white text-sm md:text-base lg:text-xl mb-6">
+              <div className="flex flex-col text-center px-[1px] break-words">
+                <p className="mb-3 text-xs">Putra dari</p>
+                <p className="text-[16px] md:text-2xl font-bold">
+                  Bapak Andri Wahyudi
+                </p>
+                <p className="text-[16px] md:text-2xl mt-3 font-bold">
+                  Ibu Ibut Puji Rahayu
+                </p>
+              </div>
+              <div className="flex flex-col text-center px-2 break-words ">
+                <p className="mb-3 text-xs">Putri dari</p>
+                <p className="text-[16px] md:text-2xl font-bold">
+                  Bapak Suwarno
+                </p>
+                <p className="text-[16px] md:text-2xl mt-3 font-bold">
+                  Ibu Muntamah
+                </p>
+              </div>
+            </div>
+
+            <p className=" mb-6 md:mx-[320px]">
+              Dengan memohon Ridho dan Rahmat Allah SWT, kami bermaksud
+              menyelenggarakan pernikahan kami, yang insya Allah akan
+              diselenggarakan pada:
+            </p>
+            <p className="text-lg font-medium">Senin, 12 Februari 2024</p>
           </div>
         </div>
-        <div className="flex w-full px-8 text-white font-habibi text-sm md:text-base lg:text-xl mb-6">
-          <div className="flex flex-col w-1/2 text-center px-[1px] break-words">
-            <p className="mb-3 text-xs">Putra dari</p>
-            <p className="text-[16px] md:text-2xl font-bold">
-              Bapak Andri Wahyudi
-            </p>
-            <p className="text-[16px] md:text-2xl mt-3 font-bold">
-              Ibu Ibut Puji Rahayu
-            </p>
-          </div>
-          <div className="flex flex-col w-1/2 text-center px-2 break-words ">
-            <p className="mb-3 text-xs">Putri dari</p>
-            <p className="text-[16px] md:text-2xl font-bold">Bapak Suwarno</p>
-            <p className="text-[16px] md:text-2xl mt-3 font-bold">
-              Ibu Muntamah
-            </p>
-          </div>
-        </div>
+
         <div className="flex flex-col mx-auto h-40 lg:h-full items-center justify-center w-full px-8">
           <div className="flex flex-row w-full">
             <div className="my-[18px] flex w-full items-center justify-center lg:h-20 md:justify-center">
               <img
                 src="/assets/icons/resepsi.svg"
-                className="h-12 md:h-16 w-12 md:w-16  mr-6 my-auto"
+                className="h-12 md:h-16 w-12 md:w-16 mr-6 my-auto"
               />
-              <div className="flex flex-col text-white font-habibi justify-between h-full">
-                <p className="text-2xl">
+              <div className="flex flex-col text-white justify-between h-full">
+                <p className="font-medium">
                   Ngunduh Mantu <br />
-                  <span className="text-base">Pukul 14.00 s.d Selesai</span>
+                  <span className="font-light">Pukul 14.00 s.d Selesai</span>
                 </p>
                 <p className="text-xs md:text-base lg:text-lg"></p>
               </div>
             </div>
           </div>
-          <p className="mt-12 lg:mt-auto mx-auto text-lg text-center text-white font-habibi">
+
+          <p className="mt-3 lg:mt-auto mx-auto text-lg text-center text-white ">
+            <span className="text-xl font-semibold">Lokasi</span>
+            <br />
             RT 04 RW 02 Dsn Baran 1 Ds Panjerejo Kec Rejotangan Kab Tulungagung,
             Jawa Timur
           </p>
@@ -136,7 +142,7 @@ function MainPage() {
             onClick={() =>
               window.open("https://maps.app.goo.gl/QqvhFsSkCvBmpgMu8", "_blank")
             }
-            className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base "
+            className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base "
           >
             <Image className="h-8 md:h-10 w-8 md:w-10 mr-4" src={Location} />
             Cek Lokasi
@@ -147,7 +153,7 @@ function MainPage() {
         id="gallery"
         className="flex flex-col items-center justify-center bg-dark-500 pt-8 md:pt-0 lg:pt-32 pb-24 lg:pb-8 gap-4 px-4 lg:px-8"
       >
-        <h1 className="my-6 col-span-2 text-5xl font-great-vibes mx-auto text-white lg:hidden">
+        <h1 className="my-6 col-span-2 text-5xl font-great-vibes mx-auto text-white">
           Gallery
         </h1>
 
@@ -185,6 +191,38 @@ function MainPage() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="h-[90vh]">
+        <div className="absolute h-full w-full overflow-hidden">
+          <Image
+            className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute bottom-0 left-0 opacity-15 rotate-180 pointer-events-none"
+            width={620}
+            height={620}
+            src="/assets/icons/flower.svg"
+          />
+        </div>
+        <div className="flex flex-col text-white px-8 pb-20 pt-28 justify-center items-center">
+          <div className="flex flex-col text-center my-auto">
+            <p>
+              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+              untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
+              dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+              kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
+              terdapat tanda-tanda bagi kaum yang berfikir."
+            </p>
+            <p>( QS. Ar- Rum 21 )</p>
+          </div>
+          <p className=" text-white text-center my-6">
+            Kehadiran dan doa restu dari keluarga, sahabat, dan teman-teman akan
+            semakin melengkapi indahnya penyatuan kisah kami
+          </p>
+          <h4 className="text-center font-great-vibes text-6xl font-bold mb-4 mt-6">
+            Dhody
+            <br />&<br />
+            Arisa
+          </h4>
         </div>
       </section>
     </BaseLayout>
