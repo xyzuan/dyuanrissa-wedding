@@ -30,19 +30,19 @@ function Footer() {
       <div className="bg-[#9a6953] backdrop-blur-xl bg-opacity-80 w-full px-6 rounded-full shadow">
         <ul className=" flex items-center gap-6 justify-evenly text-white text-xs font-light py-2 md:py-3">
           <Link href="#">
-            <li className="flex items-center font-medium  flex-col px-2 py-1">
+            <div className="flex items-center font-medium  flex-col px-2 py-1">
               <LuHome className="h-6 w-6" />
-            </li>
+            </div>
           </Link>
           <Link href="#resepsi">
-            <li className="flex items-center  flex-col px-2 py-1">
+            <div className="flex items-center flex-col px-2 py-1">
               <LuCalendarClock className="h-6 w-6" />
-            </li>
+            </div>
           </Link>
           <Link href="#gallery">
-            <li className="flex items-center  flex-col px-2 py-1">
+            <div className="flex items-center flex-col px-2 py-1">
               <LuImage className="h-6 w-6" />
-            </li>
+            </div>
           </Link>
         </ul>
       </div>

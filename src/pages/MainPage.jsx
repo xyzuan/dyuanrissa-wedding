@@ -72,6 +72,7 @@ function MainPage() {
         >
           <div className="absolute h-full w-full overflow-hidden">
             <Image
+              alt="flower"
               className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute top-0 right-0 opacity-15 pointer-events-none"
               width={620}
               height={620}
@@ -154,6 +155,7 @@ function MainPage() {
             <div className="flex flex-row w-full">
               <div className="my-[18px] flex w-full items-center justify-center lg:h-20 md:justify-center">
                 <img
+                  alt="resepsi"
                   src="/assets/icons/resepsi.svg"
                   className="h-12 md:h-16 w-12 md:w-16 mr-6 my-auto"
                 />
@@ -167,7 +169,7 @@ function MainPage() {
               </div>
             </div>
 
-            <p className="mt-3 lg:mt-auto mx-auto text-lg text-center text-white ">
+            <p className="mt-3 lg:mt-auto mx-auto text-center text-white ">
               <span className="text-xl font-semibold">Lokasi</span>
               <br />
               RT 04 RW 02 Dsn Baran 1 Ds Panjerejo Kec Rejotangan Kab
@@ -179,6 +181,7 @@ function MainPage() {
             className="flex flex-col mx-auto lg:h-full items-center justify-start w-full px-8 mt-6 z-40"
           >
             <iframe
+              title="maps"
               className="w-full h-[320px] max-w-[610px] rounded-xl mt-3"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d398.2485603069215!2d112.01908849221192!3d-8.132522757689141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e66c3f660fd1%3A0x5d9f15cf97404673!2sV289%2BXP2%2C%20Baran%20II%2C%20Panjerejo%2C%20Rejotangan%2C%20Tulungagung%20Regency%2C%20East%20Java%2066293!5e0!3m2!1sen!2sid!4v1704105841270!5m2!1sen!2sid"
               loading="lazy"
@@ -274,6 +277,7 @@ function MainPage() {
         <section className="min-h-screen">
           <div className="absolute h-full w-full overflow-hidden">
             <Image
+              alt="flower"
               className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute bottom-0 left-0 opacity-15 rotate-180 pointer-events-none"
               width={620}
               height={620}
