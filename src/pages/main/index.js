@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import CoverPage from "./CoverPage";
+import MainPage from "./MainPage";
 
 export default function Home() {
-
 
   useEffect(() => {
     AOS.init();
@@ -11,7 +10,7 @@ export default function Home() {
 
   return (
     <main>
-      <CoverPage />
+      <MainPage />
     </main>
   );
 }

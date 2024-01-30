@@ -2,8 +2,8 @@ import BaseLayout from "@/components/Layout";
 import Image from "next/image";
 import React, { useState } from "react";
 import "aos/dist/aos.css";
-import Location from "../../public/assets/icons/location.svg";
 import { Modal } from "flowbite-react";
+import { LuCalendarHeart, LuMapPin } from "react-icons/lu";
 
 function MainPage() {
   const [openGift, setOpenGift] = useState(false);
@@ -154,11 +154,7 @@ function MainPage() {
           >
             <div className="flex flex-row w-full">
               <div className="my-[18px] flex w-full items-center justify-center lg:h-20 md:justify-center">
-                <img
-                  alt="resepsi"
-                  src="/assets/icons/resepsi.svg"
-                  className="h-12 md:h-16 w-12 md:w-16 mr-6 my-auto"
-                />
+                <LuCalendarHeart className="text-white h-12 w-12 mr-6" />
                 <div className="flex flex-col text-white justify-between h-full">
                   <p className="font-medium">
                     Senin, 12 Februari 2024 <br />
@@ -194,9 +190,9 @@ function MainPage() {
                   "_blank"
                 )
               }
-              className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base "
+              className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base hover:bg-white hover:text-black"
             >
-              <Image className="h-8 md:h-10 w-8 md:w-10 mr-4" src={Location} />
+              <LuMapPin className="h-6 w-6 mr-3" />
               Cek Lokasi
             </button>
           </div>
@@ -267,7 +263,7 @@ function MainPage() {
               onClick={() => {
                 setOpenGift(true);
               }}
-              className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base "
+              className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white text-sm md:text-base hover:bg-white hover:text-black"
             >
               Amplop Digital
             </button>
@@ -337,9 +333,13 @@ function MainPage() {
                 <p>Dhody Yuantoro</p>
                 <p>659801038914539</p>
                 <button
-                  onClick={() => {
-                    window.alert("Rekening Dhody berhasil disalin");
-                    navigator.clipboard.writeText("659801038914539");
+                  onClick={async () => {
+                    try {
+                      await navigator.clipboard.writeText("659801038914539");
+                      window.alert("Rekening berhasil disalin");
+                    } catch (error) {
+                      console.error("Error copying to clipboard:", error);
+                    }
                   }}
                   className="font-semibold mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base "
                 >
@@ -348,14 +348,18 @@ function MainPage() {
               </div>
               <div className="border-white border rounded-xl p-8 pt-16 text-center">
                 <h2 className="text-lg font-medium">
-                  Bank Rakyat Indonesia (BRI)
+                  Bank Jawa Timur (Bank Jatim)
                 </h2>
-                <p>Arisa Aini</p>
-                <p>659401036282532</p>
+                <p>Dhody Yuantoko</p>
+                <p>0476166870</p>
                 <button
-                  onClick={() => {
-                    window.alert("Rekening Arisa berhasil disalin");
-                    navigator.clipboard.writeText("659401036282532");
+                  onClick={async () => {
+                    try {
+                      await navigator.clipboard.writeText("0476166870");
+                      window.alert("Rekening berhasil disalin");
+                    } catch (error) {
+                      console.error("Error copying to clipboard:", error);
+                    }
                   }}
                   className="font-semibold mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base "
                 >
