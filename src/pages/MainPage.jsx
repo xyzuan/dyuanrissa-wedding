@@ -21,7 +21,7 @@ function MainPage() {
               data-aos="fade-up"
               className="flex flex-col w-full text-white text-center h-auto px-8 py-3.5 z-10"
             >
-              <p>Pernikahan dari</p>
+              <p>Wedding Invitation</p>
               <h4 className="font-great-vibes text-6xl font-bold mb-1 mt-3">
                 Dhody & Arisa
               </h4>
@@ -47,7 +47,7 @@ function MainPage() {
               <p>( QS. Ar- Rum 21 )</p>
             </div>
             <div className="flex flex-col">
-              <p className="">Pernikahan dari</p>
+              <p>Wedding Invitation</p>
               <h4 className="font-great-vibes text-6xl font-bold mb-4 mt-6">
                 Dhody & Arisa
               </h4>
@@ -113,6 +113,7 @@ function MainPage() {
                     Ibu Ibut Puji Rahayu
                   </p>
                 </div>
+                <p className="font-great-vibes text-6xl mb-[-32px]">&</p>
                 <div
                   data-aos="fade-up"
                   className="flex flex-col text-center break-words "
@@ -134,11 +135,15 @@ function MainPage() {
               </div>
 
               <p data-aos="fade-up" className=" mb-6 md:mx-[320px]">
-                Dengan memohon Ridho dan Rahmat Allah SWT, kami bermaksud
-                menyelenggarakan pernikahan kami, yang insya Allah akan
-                diselenggarakan pada:
+                Dengan Memohon Rahmat dan Ridho Allah Subhanahu Wa Ta' ala, Kami
+                Mengundang Bapak/Ibu/Saudara/I
+                <br />
+                Untuk Menghadiri Resepsi Pernikahan Kami. Yang Insya Allah Akan
+                Dilaksanakan Pada:
               </p>
-              <p className="text-lg font-medium">Senin, 12 Februari 2024</p>
+              <p className="font-great-vibes text-5xl font-medium">
+                Acara Resepsi
+              </p>
             </div>
           </div>
 
@@ -154,7 +159,7 @@ function MainPage() {
                 />
                 <div className="flex flex-col text-white justify-between h-full">
                   <p className="font-medium">
-                    Ngunduh Mantu <br />
+                    Senin, 12 Februari 2024 <br />
                     <span className="font-light">Pukul 14.00 s.d Selesai</span>
                   </p>
                   <p className="text-xs md:text-base lg:text-lg"></p>
@@ -201,12 +206,12 @@ function MainPage() {
             Gallery
           </h1>
 
-          <div class="grid grid-cols-2 gap-4 items-center justify-center">
-            <div class="grid gap-4">
+          <div className="grid grid-cols-2 gap-4 items-center justify-center">
+            <div className="grid gap-4">
               <div>
                 <img
                   data-aos="fade-up"
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="/assets/gallery/DSC07626.jpg"
                   alt=""
                 />
@@ -214,18 +219,18 @@ function MainPage() {
               <div>
                 <img
                   data-aos="fade-up"
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="/assets/gallery/DSC07691.jpg"
                   alt=""
                 />
               </div>
             </div>
 
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div>
                 <img
                   data-aos="fade-up"
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="/assets/gallery/DSC07747.jpg"
                   alt=""
                 />
@@ -233,7 +238,7 @@ function MainPage() {
               <div>
                 <img
                   data-aos="fade-up"
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="/assets/gallery/DSC07917.jpg"
                   alt=""
                 />
@@ -291,12 +296,19 @@ function MainPage() {
               <p>( QS. Ar- Rum 21 )</p>
             </div>
             <p data-aos="fade-up" className=" text-white text-center my-6">
-              Kehadiran dan doa restu dari keluarga, sahabat, dan teman-teman
-              akan semakin melengkapi indahnya penyatuan kisah kami
+              Atas Kehadiran dan Doa Restunya Kami Ucapkan Terimakasih.
+            </p>
+            <p data-aos="fade-up" className=" text-white text-center my-3">
+              Wassalamualaikum Wr. Wb.
+            </p>
+            <p data-aos="fade-up" className=" text-white text-center my-3">
+              Kami Yang Berbahagia.
+              <br />
+              Keluarga Besar Kedua Mempelai
             </p>
             <h4
               data-aos="fade-up"
-              className="text-center font-great-vibes text-6xl font-bold mb-4 mt-6"
+              className="text-center font-great-vibes text-4xl font-bold mb-4 mt-6"
             >
               Dhody
               <br />&<br />
@@ -338,7 +350,7 @@ function MainPage() {
                 <p>659401036282532</p>
                 <button
                   onClick={() => {
-                    window.alert("Rekening Risa berhasil disalin");
+                    window.alert("Rekening Arisa berhasil disalin");
                     navigator.clipboard.writeText("659401036282532");
                   }}
                   className="font-semibold mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white  text-sm md:text-base "
