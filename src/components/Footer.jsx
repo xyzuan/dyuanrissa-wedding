@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import Home from "../../public/assets/icons/home.svg";
-import Calender from "../../public/assets/icons/calender.svg";
-import Gallery from "../../public/assets/icons/gallery.svg";
-import Image from "next/image";
 import Link from "next/link";
 
-import { LuPause, LuPlay } from "react-icons/lu";
+import {
+  LuCalendarClock,
+  LuHome,
+  LuImage,
+  LuPause,
+  LuPlay,
+} from "react-icons/lu";
 
 function Footer() {
   const [playAudio, setPlayAudio] = useState(false);
@@ -29,17 +31,17 @@ function Footer() {
         <ul className=" flex items-center gap-6 justify-evenly text-white text-xs font-light py-2 md:py-3">
           <Link href="#">
             <li className="flex items-center font-medium  flex-col px-2 py-1">
-              <Image className="h-6 w-6 mb-1" src={Home} />
+              <LuHome className="h-6 w-6" />
             </li>
           </Link>
           <Link href="#resepsi">
             <li className="flex items-center  flex-col px-2 py-1">
-              <Image className="h-6 w-6 mb-1" src={Calender} />
+              <LuCalendarClock className="h-6 w-6" />
             </li>
           </Link>
           <Link href="#gallery">
             <li className="flex items-center  flex-col px-2 py-1">
-              <Image className="h-6 w-6 mb-1" src={Gallery} />
+              <LuImage className="h-6 w-6" />
             </li>
           </Link>
         </ul>
