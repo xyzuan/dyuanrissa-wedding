@@ -62,14 +62,14 @@ function MainPage() {
       >
         <div className="absolute h-full w-full overflow-hidden">
           <Image
-            className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute bottom-0 left-0 opacity-15 rotate-180"
+            className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute bottom-0 left-0 opacity-15 rotate-180 pointer-events-none"
             width={620}
             height={620}
             src="/assets/icons/flower.svg"
           />
 
           <Image
-            className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute top-0 right-0 opacity-15"
+            className="z-10 w-9/12 md:w-6/12 md:h-6/12 absolute top-0 right-0 opacity-15 pointer-events-none"
             width={620}
             height={620}
             src="/assets/icons/flower.svg"
@@ -88,16 +88,20 @@ function MainPage() {
         </div>
         <div className="flex w-full px-8 text-white font-habibi text-sm md:text-base lg:text-xl mb-6">
           <div className="flex flex-col w-1/2 text-center px-[1px] break-words">
-            <p className="mb-3">Putra dari</p>
-            <p className="text-lg md:text-2xl font-bold">Bapak Andri Wahyudi</p>
-            <p className="text-lg md:text-2xl mt-3 font-bold">
+            <p className="mb-3 text-xs">Putra dari</p>
+            <p className="text-[16px] md:text-2xl font-bold">
+              Bapak Andri Wahyudi
+            </p>
+            <p className="text-[16px] md:text-2xl mt-3 font-bold">
               Ibu Ibut Puji Rahayu
             </p>
           </div>
           <div className="flex flex-col w-1/2 text-center px-2 break-words ">
-            <p className="mb-3">Putri dari</p>
-            <p className="text-lg md:text-2xl font-bold">Bapak Suwarno</p>
-            <p className="text-lg md:text-2xl mt-3 font-bold">Ibu Muntamah</p>
+            <p className="mb-3 text-xs">Putri dari</p>
+            <p className="text-[16px] md:text-2xl font-bold">Bapak Suwarno</p>
+            <p className="text-[16px] md:text-2xl mt-3 font-bold">
+              Ibu Muntamah
+            </p>
           </div>
         </div>
         <div className="flex flex-col mx-auto h-40 lg:h-full items-center justify-center w-full px-8">
@@ -128,7 +132,12 @@ function MainPage() {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <button className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base">
+          <button
+            onClick={() =>
+              window.open("https://maps.app.goo.gl/QqvhFsSkCvBmpgMu8", "_blank")
+            }
+            className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base z-40"
+          >
             <Image className="h-8 md:h-10 w-8 md:w-10 mr-4" src={Location} />
             Cek Lokasi
           </button>
@@ -136,11 +145,47 @@ function MainPage() {
       </section>
       <section
         id="gallery"
-        className="bg-dark-500 pt-8 md:pt-0 lg:pt-32 pb-24 lg:pb-8 grid grid-flow-row gap-4 grid-rows-7 lg:grid-rows-5 grid-cols-2 lg:grid-cols-3 h-screen px-4 lg:px-8"
+        className="flex flex-col items-center justify-center bg-dark-500 pt-8 md:pt-0 lg:pt-32 pb-24 lg:pb-8 gap-4 px-4 lg:px-8"
       >
-        <h1 className="col-span-2  text-5xl font-great-vibes my-auto mx-auto text-white lg:hidden">
+        <h1 className="my-6 col-span-2 text-5xl font-great-vibes mx-auto text-white lg:hidden">
           Gallery
         </h1>
+
+        <div class="grid grid-cols-2 gap-4 items-center justify-center">
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="/assets/gallery/DSC07626.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="/assets/gallery/DSC07691.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="/assets/gallery/DSC07747.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="/assets/gallery/DSC07917.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </BaseLayout>
   );
