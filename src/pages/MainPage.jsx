@@ -125,7 +125,7 @@ function MainPage() {
             Jawa Timur
           </p>
         </div>
-        <div className="flex flex-col mx-auto lg:h-full items-center justify-start w-full px-8 mt-6">
+        <div className="flex flex-col mx-auto lg:h-full items-center justify-start w-full px-8 mt-6 z-40">
           <iframe
             className="w-full h-[320px] max-w-[610px] rounded-xl mt-3"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d398.2485603069215!2d112.01908849221192!3d-8.132522757689141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e66c3f660fd1%3A0x5d9f15cf97404673!2sV289%2BXP2%2C%20Baran%20II%2C%20Panjerejo%2C%20Rejotangan%2C%20Tulungagung%20Regency%2C%20East%20Java%2066293!5e0!3m2!1sen!2sid!4v1704105841270!5m2!1sen!2sid"
@@ -136,7 +136,7 @@ function MainPage() {
             onClick={() =>
               window.open("https://maps.app.goo.gl/QqvhFsSkCvBmpgMu8", "_blank")
             }
-            className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base z-40"
+            className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base "
           >
             <Image className="h-8 md:h-10 w-8 md:w-10 mr-4" src={Location} />
             Cek Lokasi
